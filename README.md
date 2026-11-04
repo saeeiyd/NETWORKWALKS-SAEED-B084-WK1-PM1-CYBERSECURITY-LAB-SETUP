@@ -23,7 +23,8 @@ The lab is configured on a private virtual network so that additional machines c
 ### 1. VirtualBox Manager Setup
 Configured and verified the virtualization hypervisor and ensured the virtual machine is successfully created and powered off/ready.
 
-![VirtualBox Manager Setup](./Screenshot%202026-11-04%20125601.jpg)
+![VirtualBox Manager Setup](./<img width="2560" height="1440" alt="Screenshot 2026-11-04 125601" src="https://github.com/user-attachments/assets/506c31a3-f3d8-4358-acc1-0e05b7e62825" />
+)
 
 ### 2. Kali Linux Desktop Environment
 Successfully booted the Kali Linux virtual machine into its XFCE desktop environment.
