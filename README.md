@@ -29,7 +29,8 @@ Configured and verified the virtualization hypervisor and ensured the virtual ma
 ### 2. Kali Linux Desktop Environment
 Successfully booted the Kali Linux virtual machine into its XFCE desktop environment.
 
-![Kali Linux Desktop](./VirtualBox_kali-linux-2026.3-virtualbox-amd64_04_11_2026_12_58_06.jpg)
+![Kali Linux Desktop](./<img width="2560" height="1288" alt="VirtualBox_kali-linux-2026 3-virtualbox-amd64_04_11_2026_12_58_06" src="https://github.com/user-attachments/assets/0a09ef90-8f5d-4643-89c6-90daa91bd2c0" />
+)
 
 ---
 
