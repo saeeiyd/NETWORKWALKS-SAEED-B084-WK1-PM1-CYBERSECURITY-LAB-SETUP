@@ -167,7 +167,7 @@ Unauthorized access, malicious activities, and illegal use of cybersecurity tool
 
 **Saeed Muhammad Lawal Mustapha**
 
-Cybersecurity Student | Aspiring Cybersecurity Professional
+Cybersecurity Student | Aspiring Cybersecurity Engineer
 
 - GitHub: [@saeeiyd](https://github.com/saeeiyd)
 - LinkedIn: [Saeed Muhammad Lawal Mustapha](https://www.linkedin.com/in/saeed-muhammad-mustapha-lawal-03a0912b4/)
