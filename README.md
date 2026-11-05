@@ -1,115 +1,103 @@
 
-# 🔐 Cybersecurity Home Lab | Kali Linux & VirtualBox
+# 🔐 Cybersecurity Lab Setup | Kali Linux & VirtualBox
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Platform-VirtualBox-blue?style=for-the-badge&logo=virtualbox" />
-  <img src="https://img.shields.io/badge/OS-Kali%20Linux-557C94?style=for-the-badge&logo=kalilinux" />
-  <img src="https://img.shields.io/badge/Focus-Cybersecurity-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Kali%20Linux-2026.3-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" />
+  <img src="https://img.shields.io/badge/VirtualBox-Virtualization-blue?style=for-the-badge&logo=virtualbox&logoColor=white" />
+  <img src="https://img.shields.io/badge/Windows-11-0078D4?style=for-the-badge&logo=windows11&logoColor=white" />
   <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
 </p>
 
 ## 📌 Project Overview
 
-This project documents the design and configuration of a personal cybersecurity laboratory using **Oracle VirtualBox** and **Kali Linux**.
+This project documents the installation and configuration of a personal cybersecurity laboratory using **Kali Linux 2026.3** and **Oracle VirtualBox** on a Windows 11 host machine.
 
-The objective was to build a controlled virtual environment for learning, experimenting, and developing practical cybersecurity skills without affecting physical systems or unauthorized networks.
+The objective is to establish a controlled virtual environment for learning Linux administration, networking, and practical cybersecurity techniques.
 
-The lab provides a foundation for hands-on exercises in Linux administration, networking, reconnaissance, vulnerability assessment, and penetration testing.
-
----
+This laboratory provides a foundation for hands-on cybersecurity experiments, security testing, and further exploration of penetration testing methodologies.
 
 ## 🎯 Project Objectives
 
-- Set up and configure Oracle VirtualBox.
-- Install and configure Kali Linux as a virtual machine.
-- Understand virtual machine networking.
-- Configure network connectivity between virtual environments.
-- Explore the Kali Linux operating system.
-- Build a safe environment for cybersecurity experimentation.
-- Prepare the lab for future penetration testing exercises.
-
----
+- Install and configure Oracle VirtualBox.
+- Deploy Kali Linux as a virtual machine.
+- Understand virtualization and virtual machine management.
+- Configure virtual networking using NAT Network.
+- Test internet connectivity within the virtual machine.
+- Develop practical Linux administration skills.
+- Establish a foundation for future cybersecurity exercises.
 
 ## 🛠️ Tools & Technologies
 
-| Tool | Purpose |
+| Tool / Technology | Purpose |
 |---|---|
-| Oracle VirtualBox | Virtualization platform |
-| Kali Linux | Penetration testing operating system |
-| Windows | Host operating system |
-| Linux Terminal | Command-line administration |
-| NAT / Host-only Networking | Virtual network configuration |
-
----
+| Windows 11 | Host Operating System |
+| Oracle VirtualBox | Virtualization Platform |
+| Kali Linux 2026.3 | Guest Operating System |
+| NAT Network | Virtual Network Configuration |
+| Linux Terminal | Command-Line Operations |
 
 ## 🏗️ Lab Architecture
 
-The laboratory consists of a host computer running Oracle VirtualBox, with Kali Linux deployed as a virtual machine.
+The laboratory runs on a Windows 11 host machine using Oracle VirtualBox to create and manage a Kali Linux virtual machine.
 
 ```text
-             HOST MACHINE
-          (Windows Operating System)
-                    |
-                    |
-             Oracle VirtualBox
-                    |
-                    |
-              Virtual Network
-                    |
-                    |
-              Kali Linux VM
-                    |
-                    |
-          Cybersecurity Environment
+          HOST MACHINE
+           Windows 11
+               |
+               |
+        Oracle VirtualBox
+               |
+               |
+          NAT Network
+               |
+               |
+          Kali Linux VM
+               |
+               |
+      Cybersecurity Lab
 ```
 
-Additional virtual machines and intentionally vulnerable targets can be integrated into the environment for future security testing.
+## ⚙️ Virtual Machine Configuration
 
----
-
-## ⚙️ Lab Configuration
+The following specifications were used when configuring the Kali Linux virtual machine.
 
 | Component | Configuration |
 |---|---|
-| Host Operating System | [Your OS] |
-| Virtualization Platform | Oracle VirtualBox |
-| VirtualBox Version | [Your Version] |
-| Guest Operating System | Kali Linux |
-| Kali Linux Version | [Your Version] |
-| Allocated RAM | [Your RAM] |
-| Virtual CPU Cores | [Number of Cores] |
-| Network Mode | [NAT / NAT Network / Host-only] |
-| Storage | [Allocated Storage] |
+| Host Operating System | Windows 11 |
+| Guest Operating System | Kali Linux 2026.3 |
+| OS Type | Debian (64-bit) |
+| Base Memory (RAM) | 2048 MB (2 GB) |
+| Processors | 2 CPU Cores |
+| Video Memory | 128 MB |
+| Graphics Controller | VMSVGA |
+| Virtual Disk | 80.09 GB |
+| Network Adapter | NAT Network |
 
----
-
-## 🚀 Lab Setup Process
+## 🚀 Implementation Steps
 
 ### 1. Install Oracle VirtualBox
 
-Downloaded and installed Oracle VirtualBox to provide the virtualization environment required to run Kali Linux.
+Downloaded and installed Oracle VirtualBox on the Windows 11 host machine to create a virtualized environment for running Kali Linux.
 
-### 2. Download Kali Linux
+### 2. Install Kali Linux
 
-Downloaded the official Kali Linux virtual machine image from the official Kali Linux website.
+Downloaded the Kali Linux 2026.3 VirtualBox image and imported it into Oracle VirtualBox.
 
-### 3. Import Kali Linux into VirtualBox
+### 3. Configure the Virtual Machine
 
-Imported the Kali Linux virtual machine into VirtualBox and configured the required hardware resources, including memory, processor cores, and storage.
+Configured the virtual machine resources, including RAM, CPU cores, video memory, and virtual disk storage.
 
-### 4. Configure Virtual Machine Networking
+### 4. Configure Network Settings
 
-Configured the network adapter to establish connectivity within the virtual environment.
+Configured the virtual machine's network adapter to use **NAT Network**, allowing the virtual machine to access external networks through the host machine's network connection.
 
-The selected network configuration allows the virtual machine to communicate according to the configured network mode.
+### 5. Boot Kali Linux
 
-### 5. Start and Verify Kali Linux
+Started the Kali Linux virtual machine and verified that the operating system booted successfully.
 
-Started the Kali Linux virtual machine and verified that the operating system was functioning correctly.
+### 6. Test Internet Connectivity
 
-### 6. Test Network Connectivity
-
-Performed basic network checks to verify the network interface and connectivity.
+Used basic Linux networking commands to inspect network interfaces, routing information, and test internet connectivity.
 
 Commands used:
 
@@ -125,53 +113,26 @@ ip route
 ping -c 4 8.8.8.8
 ```
 
+### 7. Check for System Updates
+
+Used the APT package manager to check for available package updates.
+
 ```bash
 sudo apt update
 ```
 
-### 7. Create a Virtual Machine Snapshot
+## 💻 Practical Skills Demonstrated
 
-Created a snapshot of the configured virtual machine to provide a recovery point before conducting future cybersecurity experiments.
+Through this project, I gained practical experience in:
 
----
-
-## 🔍 Practical Skills Demonstrated
-
-Through this project, I gained practical exposure to:
-
-- Virtualization and virtual machine management.
+- Virtualization using Oracle VirtualBox.
 - Kali Linux installation and configuration.
 - Linux command-line operations.
-- Basic network configuration and troubleshooting.
-- IP addressing and network connectivity.
-- Virtual network isolation concepts.
-- Cybersecurity lab environment preparation.
-
----
-
-## 📸 Project Screenshots
-
-Screenshots documenting the laboratory setup and configuration will be included below.
-
-### 1. VirtualBox Environment
-
-![VirtualBox Environment](screenshots/virtualbox.png)
-
-### 2. Kali Linux Desktop
-
-![Kali Linux Desktop](screenshots/kali-desktop.png)
-
-### 3. Network Configuration
-
-![Network Configuration](screenshots/network-configuration.png)
-
-### 4. Terminal and Connectivity Verification
-
-![Connectivity Verification](screenshots/connectivity-test.png)
-
-> Replace these example image paths with your actual screenshot filenames.
-
----
+- Basic networking and IP addressing.
+- Virtual network configuration.
+- Network connectivity testing.
+- Basic Linux system administration.
+- Setting up a controlled cybersecurity environment.
 
 ## 🔮 Future Improvements
 
@@ -179,43 +140,37 @@ This laboratory will serve as the foundation for more advanced cybersecurity pro
 
 Planned improvements include:
 
-- Integrating Metasploitable 2 as an intentionally vulnerable target.
+- Integrating Metasploitable 2 as a vulnerable target machine.
 - Deploying OWASP Juice Shop for web application security testing.
-- Practicing network reconnaissance using Nmap.
-- Exploring vulnerability assessment techniques.
-- Performing packet analysis using Wireshark.
-- Practicing controlled exploitation in isolated environments.
-- Documenting practical penetration testing exercises.
-
----
+- Performing network reconnaissance using Nmap.
+- Conducting vulnerability assessments.
+- Analyzing network traffic using Wireshark.
+- Practicing penetration testing in isolated environments.
+- Documenting hands-on cybersecurity exercises.
 
 ## ⚠️ Disclaimer
 
-This laboratory was created strictly for educational purposes and authorized cybersecurity testing.
+This laboratory was created strictly for educational purposes and authorized security testing.
 
-All security testing and experiments will be conducted only on systems that I own or have explicit permission to assess.
+All cybersecurity experiments and testing activities will be conducted only on systems that I own or have explicit permission to assess.
 
-I do not support or encourage unauthorized access, malicious activities, or illegal use of cybersecurity tools.
+Unauthorized access, malicious activities, and illegal use of cybersecurity tools are not encouraged.
 
----
-
-## 🔗 Resources
+## 📚 References & Resources
 
 - [Kali Linux Official Website](https://www.kali.org/)
-- [Oracle VirtualBox](https://www.virtualbox.org/)
 - [Kali Linux Documentation](https://www.kali.org/docs/)
+- [Oracle VirtualBox](https://www.virtualbox.org/)
 - [VirtualBox Documentation](https://www.virtualbox.org/wiki/Documentation)
-
----
 
 ## 👨‍💻 Author
 
-**[Your Full Name]**
+**Saeed Muhammad Lawal Mustapha**
 
 Cybersecurity Student | Aspiring Cybersecurity Professional
 
-- GitHub: [Your GitHub Profile](https://github.com/YOUR_USERNAME)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/YOUR_PROFILE/)
+- GitHub: [@saeeiyd](https://github.com/saeeiyd)
+- LinkedIn: [Saeed Muhammad Lawal Mustapha](https://www.linkedin.com/in/saeed-muhammad-mustapha-lawal-03a0912b4/)
 
 ---
 
