@@ -123,7 +123,7 @@ sudo apt update
 ## 📸 Project Screenshots
 
 ### 1. Oracle VirtualBox Configuration
-![Oracle VirtualBox](screenshots/virtualbox.png)
+![Oracle VirtualBox](Screenshot%202026-11-05%20145510.png)
 
 ### 2. Kali Linux Desktop
 ![Kali Linux Desktop](screenshots/kali-desktop.png)
