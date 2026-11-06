@@ -129,7 +129,7 @@ sudo apt update
 ![Kali Linux Desktop](VirtualBox_kali-linux-2026.3-virtualbox-amd64_05_11_2026_14_58_30.png)
 
 ### 3. Kali Linux Terminal
-![Kali Linux Terminal](screenshots/kali-terminal.png)
+![Kali Linux Terminal](VirtualBox_kali-linux-2026.3-virtualbox-amd64_05_11_2026_15_13_28.png)
 
 ## 💻 Practical Skills Demonstrated
 
