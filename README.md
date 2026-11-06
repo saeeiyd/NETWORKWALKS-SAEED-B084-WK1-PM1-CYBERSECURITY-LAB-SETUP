@@ -126,7 +126,7 @@ sudo apt update
 ![Oracle VirtualBox](Screenshot%202026-11-05%20145510.png)
 
 ### 2. Kali Linux Desktop
-![Kali Linux Desktop](screenshots/kali-desktop.png)
+![Kali Linux Desktop](VirtualBox_kali-linux-2026.3-virtualbox-amd64_05_11_2026_14_58_30.png)
 
 ### 3. Kali Linux Terminal
 ![Kali Linux Terminal](screenshots/kali-terminal.png)
