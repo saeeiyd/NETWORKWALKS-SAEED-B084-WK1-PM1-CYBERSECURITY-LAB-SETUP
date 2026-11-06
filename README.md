@@ -120,6 +120,16 @@ Used the APT package manager to check for available package updates.
 ```bash
 sudo apt update
 ```
+## 📸 Project Screenshots
+
+### 1. Oracle VirtualBox Configuration
+![Oracle VirtualBox](screenshots/virtualbox.png)
+
+### 2. Kali Linux Desktop
+![Kali Linux Desktop](screenshots/kali-desktop.png)
+
+### 3. Kali Linux Terminal
+![Kali Linux Terminal](screenshots/kali-terminal.png)
 
 ## 💻 Practical Skills Demonstrated
 
